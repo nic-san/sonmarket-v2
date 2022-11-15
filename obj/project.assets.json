@@ -288,7 +288,7 @@
           "Mono.TextTemplating": "2.2.1"
         },
         "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -3902,6 +3902,7 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 7.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.0",
       "Microsoft.AspNetCore.Identity.UI >= 7.0.0",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0"
     ]
@@ -3954,6 +3955,12 @@
             "version": "[7.0.0, )"
           },
           "Microsoft.AspNetCore.Identity.UI": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.0, )"
           },

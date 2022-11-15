@@ -1,0 +1,48 @@
+@model sonmarket.DTO.ProdutoDTO
+@{
+    Layout = "_LayoutAdm";
+}
+<h2>Novo produto</h2>
+<hr />
+<form class="form-horizontal" asp-controller="Produtos" asp-action="Salvar" method="POST">
+    <div>
+        <input type="hidden" asp-for="Id" value="0">
+        <label for="Nome">Nome</label>
+        <input type="text" class="form-control" asp-for="Nome" placeholder="Nome">
+        <span asp-validation-for="Nome"></span>
+    </div><br>
+    <div>
+        <label for="CategoriaID">Categoria</label>
+        <select class="form-control" asp-for="CategoriaID"
+            asp-items='@(new SelectList(@ViewBag.Categorias,"Id","Nome"))'></select>
+        <span asp-validation-for="CategoriaID"></span>
+    </div><br>
+    <div>
+        <label for="FornecedorID">Fornecedor</label>
+        <select class="form-control" asp-for="FornecedorID"
+            asp-items='@(new SelectList(@ViewBag.Fornecedores,"Id","Nome"))'></select>
+        <span asp-validation-for="FornecedorID"></span>
+    </div><br>
+    <div>
+        <label for="PrecoDeCusto">Preço de custo</label>
+        <input type="number" step="any" class="form-control" asp-for="PrecoDeCusto" placeholder="00.00">
+        <span asp-validation-for="PrecoDeCusto"></span>
+    </div><br>
+    <div>
+        <label for="PrecoDeVenda">Preço de venda</label>
+        <input type="number" step="any" class="form-control" asp-for="PrecoDeVenda" placeholder="00.00">
+        <span asp-validation-for="PrecoDeVenda"></span>
+    </div><br>
+    <div>
+        <label for="Medicao">Medição</label>
+        <select class="form-control" asp-for="Medicao">
+            <option value="0">Litro</option>
+            <option value="1">Quilo</option>
+            <option value="2">Unidade</option>
+        </select>
+        <span asp-validation-for="Medicao"></span>
+    </div><br>
+    <div>
+        <button class="btn btn-success">Cadastrar</button>
+    </div>
+</form>
