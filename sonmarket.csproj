@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-sonmarket-387e47b2-66a1-4c52-ba7c-115586687b8b</UserSecretsId>
+    <UserSecretsId>aspnet-sonmarket-32032f0c-7dd0-48e2-a517-3b60497700a8</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
