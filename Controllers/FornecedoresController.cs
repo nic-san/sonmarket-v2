@@ -37,5 +37,46 @@ namespace sonmarket.Controllers
                 return View("../Gestao/NovoFornecedor");
             }
         }
+
+        [HttpPost]
+        public IActionResult Atualizar(FornecedorDTO fornecedorTemporario)
+        {
+            if (ModelState.IsValid)
+            {
+                var fornecedor = database.Fornecedores.First(c => c.Id == fornecedorTemporario.Id);
+                fornecedor.Nome = fornecedorTemporario.Nome;
+                fornecedor.Email = fornecedorTemporario.Email;
+                fornecedor.Telefone = fornecedorTemporario.Telefone;
+                database.SaveChanges();
+                return RedirectToAction("Fornecedores", "Gestao");
+            }
+            else
+            {
+                return View("../Gestao/EditarFornecedor");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Deletar(int id)
+        {
+            if (id > 0)
+            {
+                var fornecedor = database.Fornecedores.First(c => c.Id == id);
+                fornecedor.Status = false;
+                database.SaveChanges();
+            }
+            return RedirectToAction("Fornecedores", "Gestao");
+        }
+        [HttpPost]
+        public IActionResult Ativar(int id)
+        {
+            if (id > 0)
+            {
+                var fornecedor = database.Fornecedores.First(c => c.Id == id);
+                fornecedor.Status = true;
+                database.SaveChanges();
+            }
+            return RedirectToAction("AtivarFornecedor", "Gestao");
+        }
     }
 }

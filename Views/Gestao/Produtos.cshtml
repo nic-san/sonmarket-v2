@@ -1,4 +1,4 @@
-@model sonmarket.Models.Produto
+@model IEnumerable<sonmarket.Models.Produto>
 @{
     Layout = "_LayoutAdm";
 }
@@ -7,3 +7,62 @@
 <a class="btn btn-success" asp-controller="Gestao" asp-action="NovoProduto">Novo produto</a>
 <a class="btn btn-info" asp-controller="Gestao" asp-action="AtivarProduto">Ativar produto</a>
 <hr />
+
+<script>
+    $(document).ready(function () {
+        $('#produtos').DataTable();
+    });
+</script>
+
+<table id="produtos" class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Fornecedor</th>
+            <th>Preço de custo</th>
+            <th>Preço de venda</th>
+            <th>Medição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prod in Model)
+        {
+            <tr>
+                <td>@prod.Id</td>
+                <td>@prod.Nome</td>
+                <td>@prod.Categoria.Nome</td>
+                <td>@prod.Fornecedor.Nome</td>
+                <td>R$ @prod.PrecoDeCusto</td>
+                <td>R$ @prod.PrecoDeVenda</td>
+                <td>
+                    @if (@prod.Medicao == 0)
+                    {
+                        <p>Litro</p>
+                    }
+                    else if (@prod.Medicao == 1)
+                    {
+                        <p>Quilo</p>
+                    }
+                    else if (@prod.Medicao == 2)
+                    {
+                        <p>Unidade</p>
+                    }
+                    else
+                    {
+                        <p>Unidade</p>
+                    }
+                </td>
+                <td>
+                    <a href="/Gestao/EditarProduto/@prod.Id" class="btn btn-primary">Editar</a>
+                    <form asp-controller="Produtos" asp-action="Deletar" style="display: inline;">
+                        <input type="hidden" name="id" id="id" value="@prod.Id">
+                        <button class="btn btn-danger">Deletar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

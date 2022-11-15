@@ -1,4 +1,4 @@
-@model sonmarket.Models.Fornecedor
+@model IEnumerable<sonmarket.Models.Fornecedor>
 @{
     Layout = "_LayoutAdm";
 }
@@ -8,3 +8,39 @@
 <a class="btn btn-success" asp-controller="Gestao" asp-action="NovoFornecedor">Novo fornecedor</a>
 <a class="btn btn-info" asp-controller="Gestao" asp-action="AtivarFornecedor">Ativar fornecedor</a>
 <hr />
+
+<script>
+    $(document).ready(function () {
+        $('#fornecedores').DataTable();
+    });
+</script>
+
+<table id="fornecedores" class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var forn in Model)
+        {
+            <tr>
+                <td>@forn.Id</td>
+                <td>@forn.Nome</td>
+                <td>@forn.Email</td>
+                <td>@forn.Telefone</td>
+                <td>
+                    <a href="/Gestao/EditarFornecedor/@forn.Id" class="btn btn-primary">Editar</a>
+                    <form asp-controller="Fornecedores" asp-action="Deletar" style="display: inline;">
+                        <input type="hidden" name="id" id="id" value="@forn.Id">
+                        <button class="btn btn-danger">Deletar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

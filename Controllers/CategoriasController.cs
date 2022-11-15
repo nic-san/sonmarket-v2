@@ -36,16 +36,44 @@ namespace sonmarket.Controllers
                 return View("../Gestao/NovaCategoria");
             }
         }
-        // [HttpPost]
-        // public IActionResult Deletar(int id)
-        // {
-        //     if (id > 0)
-        //     {
-        //         Categoria categoria = new Categoria();
-        //         database.Categorias.Where(c => c.Id == id);
-        //         categoria.Status = false;
-        //     }
 
-        // }
+        [HttpPost]
+        public IActionResult Atualizar(CategoriaDTO categoriaTemporaria)
+        {
+            if (ModelState.IsValid)
+            {
+                var categoria = database.Categorias.First(c => c.Id == categoriaTemporaria.Id);
+                categoria.Nome = categoriaTemporaria.Nome;
+                database.SaveChanges();
+                return RedirectToAction("Categorias", "Gestao");
+            }
+            else
+            {
+                return View("../Gestao/EditarCategoria");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Deletar(int id)
+        {
+            if (id > 0)
+            {
+                var categoria = database.Categorias.First(c => c.Id == id);
+                categoria.Status = false;
+                database.SaveChanges();
+            }
+            return RedirectToAction("Categorias", "Gestao");
+        }
+        [HttpPost]
+        public IActionResult Ativar(int id)
+        {
+            if (id > 0)
+            {
+                var categoria = database.Categorias.First(c => c.Id == id);
+                categoria.Status = true;
+                database.SaveChanges();
+            }
+            return RedirectToAction("AtivarCategoria", "Gestao");
+        }
     }
 }

@@ -1,0 +1,27 @@
+@model sonmarket.DTO.FornecedorDTO
+@{
+    Layout = "_LayoutAdm";
+}
+<h2>Editar fornecedor</h2>
+<hr />
+<form class="form-horizontal" asp-controller="Fornecedores" asp-action="Atualizar" method="POST">
+    <div>
+        <input type="hidden" asp-for="Id">
+        <label for="Nome">Nome</label>
+        <input type="text" class="form-control" asp-for="Nome" placeholder="Nome">
+        <span asp-validation-for="Nome"></span>
+    </div><br>
+    <div>
+        <label for="Email">Email</label>
+        <input type="text" class="form-control" asp-for="Email" placeholder="email@fornecedor.com">
+        <span asp-validation-for="Email"></span>
+    </div><br>
+    <div>
+        <label for="Telefone">Telefone</label>
+        <input type="text" class="form-control" asp-for="Telefone" placeholder="11 01234-5678">
+        <span asp-validation-for="Telefone"></span>
+    </div><br>
+    <div>
+        <button class="btn btn-success">Atualizar</button>
+    </div>
+</form>
