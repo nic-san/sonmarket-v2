@@ -1,0 +1,19 @@
+#topbar{
+
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    padding-left:47% ;
+
+ }
+
+ #btnbtn{
+    color: #ffffff;
+    background-color: #3b3b4700;
+    font-size: 15px;
+    border-color: #3b3b4700;
+ }
+
+ #table-scroll{
+    overflow-y: scroll;
+ }

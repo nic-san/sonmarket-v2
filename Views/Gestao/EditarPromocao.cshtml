@@ -1,0 +1,28 @@
+@model sonmarket.DTO.PromocaoDTO
+@{
+    Layout = "_LayoutAdm";
+}
+<h2>Editar promoção</h2>
+<hr />
+<form class="form-horizontal" asp-controller="Promocoes" asp-action="Atualizar" method="POST">
+    <div>
+        <input type="hidden" asp-for="Id">
+        <label for="Nome">Nome</label>
+        <input type="text" class="form-control" asp-for="Nome" placeholder="Nome">
+        <span asp-validation-for="Nome"></span>
+    </div><br>
+    <div>
+        <label for="ProdutoID">Produto</label>
+        <select class="form-control" asp-for="ProdutoID"
+            asp-items='@(new SelectList(@ViewBag.Produtos,"Id","Nome"))'></select>
+        <span asp-validation-for="ProdutoID"></span>
+    </div><br>
+    <div>
+        <label for="Porcentagem">Fornecedor</label>
+        <input type="number" class="form-control" asp-for="Porcentagem" placeholder="0-100%">
+        <span asp-validation-for="Porcentagem"></span>
+    </div><br>
+    <div>
+        <button class="btn btn-success">Atualizar</button>
+    </div>
+</form>

@@ -84,8 +84,8 @@ namespace sonmarket.Controllers
         }
         public IActionResult EditarProduto(int id)
         {
-            ViewBag.Categorias = database.Categorias.ToList();
-            ViewBag.Fornecedores = database.Fornecedores.ToList();
+            ViewBag.Categorias = database.Categorias.Where(c => c.Status == true).ToList();
+            ViewBag.Fornecedores = database.Fornecedores.Where(f => f.Status == true).ToList();
             var produto = database.Produtos.First(c => c.Id == id);
             var fornecedor = database.Fornecedores.First(c => c.Id == produto.Categoria.Id);
             var categoria = database.Categorias.First(c => c.Id == produto.Fornecedor.Id);
@@ -101,17 +101,47 @@ namespace sonmarket.Controllers
         }
         public IActionResult NovoProduto()
         {
-            ViewBag.Categorias = database.Categorias.ToList();
-            ViewBag.Fornecedores = database.Fornecedores.ToList();
+            ViewBag.Categorias = database.Categorias.Where(c => c.Status == true).ToList();
+            ViewBag.Fornecedores = database.Fornecedores.Where(f => f.Status == true).ToList();
             return View();
         }
         public IActionResult AtivarProduto()
         {
             var produtos = database.Produtos.Where(p => p.Status == false).ToList();
-            ViewBag.Categorias = database.Categorias.ToList();
-            ViewBag.Fornecedores = database.Fornecedores.ToList();
             return View(produtos);
         }
         #endregion Produto
+
+        #region Promoção
+        public IActionResult Promocoes()
+        {
+            var promocao = database.Promocoes.Include(p => p.Produto).Where(p => p.Status == true).ToList();
+            return View(promocao);
+        }
+        public IActionResult NovaPromocao()
+        {
+            ViewBag.Produtos = database.Produtos.ToList();
+            return View();
+        }
+        public IActionResult EditarPromocao(int id)
+        {
+            ViewBag.Produtos = database.Produtos.ToList();
+            var promocao = database.Promocoes.First(p => p.Id == id);
+            var produto = database.Produtos.First(c => c.Id == promocao.Produto.Id);
+            PromocaoDTO promocaoView = new PromocaoDTO();
+            promocaoView.Id = promocao.Id;
+            promocaoView.Nome = promocao.Nome;
+            promocaoView.ProdutoID = produto.Id;
+            promocaoView.Porcentagem = promocao.Porcentagem;
+            return View(promocaoView);
+        }
+        public IActionResult AtivarPromocao()
+        {
+            var promocao = database.Promocoes.Include(p => p.Produto).Where(p => p.Status == false).ToList();
+            return View(promocao);
+        }
+
+        #endregion Promoção
+
     }
 }

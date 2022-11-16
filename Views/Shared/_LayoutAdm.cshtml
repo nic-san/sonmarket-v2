@@ -18,6 +18,7 @@
   <!-- Datatables -->
   <script src="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"></script>
   <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap4.min.js"></script>
 
 
   <!-- Custom fonts for this template-->
@@ -62,10 +63,7 @@
           <i class="fas fa-user-circle fa-fw"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-          <a class="dropdown-item" href="#">Settings</a>
-          <a class="dropdown-item" href="#">Activity Log</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+          <a class="dropdown-item" href="/Home">Frente de caixa</a>
         </div>
       </li>
     </ul>
@@ -93,8 +91,13 @@
           <span>Categorias</span></a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" asp-controller="Gestao" asp-action="Promocoes">
+          <i class="fas fa-fw fa-percentage"></i>
+          <span>Promoções</span></a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" asp-controller="Gestao" asp-action="Fornecedores">
-          <i class="fas fa-fw fa-circle"></i>
+          <i class="fas fa-fw fa-people-carry"></i>
           <span>Fornecedores</span></a>
       </li>
     </ul>
