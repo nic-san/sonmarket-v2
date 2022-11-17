@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using sonmarket.Data;
 using sonmarket.Models;
 using sonmarket.DTO;
+using Microsoft.EntityFrameworkCore;
 
 namespace sonmarket.Controllers
 {
@@ -84,6 +85,55 @@ namespace sonmarket.Controllers
                 database.SaveChanges();
             }
             return RedirectToAction("Produtos", "Gestao");
+        }
+
+        [HttpPost]
+        public IActionResult Produto(int id)
+        {
+            if (id > 0)
+            {
+                var produto = database.Produtos.Include(p => p.Categoria).Include(p => p.Fornecedor).Where(p => p.Status == true).First(p => p.Id == id);
+
+                if (produto != null)
+                {
+                    var estoque = database.Estoques.First(e => e.Produto.Id == produto.Id);
+                    if (estoque == null)
+                    {
+                        produto = null;
+                    }
+                }
+
+                if (produto != null)
+                {
+                    Promocao promocao;
+                    try
+                    {
+                        promocao = database.Promocoes.First(p => p.Produto.Id == produto.Id && p.Status == true);
+                    }
+                    catch (Exception e)
+                    {
+                        promocao = null;
+                    }
+
+                    if (promocao != null)
+                    {
+                        produto.PrecoDeVenda -= (produto.PrecoDeVenda * (promocao.Porcentagem / 100));
+                    }
+
+                    Response.StatusCode = 200;
+                    return Json(produto);
+                }
+                else
+                {
+                    Response.StatusCode = 404;
+                    return Json(null);
+                }
+            }
+            else
+            {
+                Response.StatusCode = 404;
+                return Json(null);
+            }
         }
     }
 }

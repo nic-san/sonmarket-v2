@@ -25,8 +25,10 @@ namespace sonmarket.DTO
         [Required(ErrorMessage = "Preço de custo obrigatório")]
         public float PrecoDeCusto { get; set; }
 
+
         [Required(ErrorMessage = "Preço de venda obrigatório")]
         public float PrecoDeVenda { get; set; }
+
 
         [Required(ErrorMessage = "Medição obrigatória")]
         [Range(0, 2, ErrorMessage = "Medição inválida")]

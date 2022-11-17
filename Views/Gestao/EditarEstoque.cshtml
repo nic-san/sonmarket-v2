@@ -1,10 +1,10 @@
-@model sonmarket.DTO.PromocaoDTO
+@model sonmarket.DTO.EstoqueDTO
 @{
     Layout = "_LayoutAdm";
 }
-<h2>Editar promoção</h2>
+<h2>Editar estoque</h2>
 <hr />
-<form class="form-horizontal" asp-controller="Promocoes" asp-action="Atualizar" method="POST">
+<form class="form-horizontal" asp-controller="Estoques" asp-action="Atualizar" method="POST">
     <div>
         <input type="hidden" asp-for="Id">
         <label for="Nome">Nome</label>
@@ -18,9 +18,9 @@
         <span asp-validation-for="ProdutoID"></span>
     </div><br>
     <div>
-        <label for="Porcentagem">Porcentagem</label>
-        <input type="number" class="form-control" asp-for="Porcentagem" placeholder="0-100%">
-        <span asp-validation-for="Porcentagem"></span>
+        <label for="Quantidade">Quantidade</label>
+        <input type="number" class="form-control" asp-for="Quantidade" placeholder="1,2,3...">
+        <span asp-validation-for="Quantidade"></span>
     </div><br>
     <div>
         <button class="btn btn-success">Atualizar</button>

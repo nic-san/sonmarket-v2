@@ -1,0 +1,54 @@
+@model IEnumerable<sonmarket.Models.Estoque>
+@{
+    Layout = "_LayoutAdm";
+}
+<h2>Ativar estoques</h2>
+<script>
+    $(document).ready(function () {
+        $('#estoques').DataTable({
+            "info": false,
+            "language": {
+                "lengthMenu": "Mostrando _MENU_ registros por página",
+                "zeroRecords": "Nada encontrado",
+                "info": "Mostrando página _PAGE_ de _PAGES_",
+                "infoEmpty": "Nenhum registro disponível",
+                "search": "Buscar:",
+                "paginate": {
+                    "first": "Primeiro",
+                    "last": "Último",
+                    "next": "Próximo",
+                    "previous": "Anterior"
+                }
+            }
+        });
+    });
+</script>
+
+<table id="estoques" class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Produto</th>
+            <th>Porcentagem</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var est in Model)
+        {
+            <tr>
+                <td>@est.Id</td>
+                <td>@est.Nome</td>
+                <td>@est.Produto.Nome</td>
+                <td>@est.Quantidade %</td>
+                <td>
+                    <form asp-controller="Estoques" asp-action="Ativar" style="display: inline;">
+                        <input type="hidden" name="id" id="id" value="@est.Id">
+                        <button class="btn btn-success">Ativar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

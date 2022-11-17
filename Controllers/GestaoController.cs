@@ -86,14 +86,12 @@ namespace sonmarket.Controllers
         {
             ViewBag.Categorias = database.Categorias.Where(c => c.Status == true).ToList();
             ViewBag.Fornecedores = database.Fornecedores.Where(f => f.Status == true).ToList();
-            var produto = database.Produtos.First(c => c.Id == id);
-            var fornecedor = database.Fornecedores.First(c => c.Id == produto.Categoria.Id);
-            var categoria = database.Categorias.First(c => c.Id == produto.Fornecedor.Id);
+            var produto = database.Produtos.Include(cat => cat.Categoria).Include(forn => forn.Fornecedor).First(c => c.Id == id);
             ProdutoDTO produtoView = new ProdutoDTO();
             produtoView.Id = produto.Id;
             produtoView.Nome = produto.Nome;
-            produtoView.CategoriaID = categoria.Id;
-            produtoView.FornecedorID = fornecedor.Id;
+            produtoView.CategoriaID = produto.Categoria.Id;
+            produtoView.FornecedorID = produto.Fornecedor.Id;
             produtoView.PrecoDeCusto = produto.PrecoDeCusto;
             produtoView.PrecoDeVenda = produto.PrecoDeVenda;
             produtoView.Medicao = produto.Medicao;
@@ -107,7 +105,7 @@ namespace sonmarket.Controllers
         }
         public IActionResult AtivarProduto()
         {
-            var produtos = database.Produtos.Where(p => p.Status == false).ToList();
+            var produtos = database.Produtos.Include(p => p.Categoria).Include(p => p.Fornecedor).Where(p => p.Status == false).ToList();
             return View(produtos);
         }
         #endregion Produto
@@ -120,18 +118,18 @@ namespace sonmarket.Controllers
         }
         public IActionResult NovaPromocao()
         {
-            ViewBag.Produtos = database.Produtos.ToList();
+            ViewBag.Produtos = database.Produtos.Where(p => p.Status == true).ToList();
             return View();
         }
         public IActionResult EditarPromocao(int id)
         {
-            ViewBag.Produtos = database.Produtos.ToList();
-            var promocao = database.Promocoes.First(p => p.Id == id);
-            var produto = database.Produtos.First(c => c.Id == promocao.Produto.Id);
+            ViewBag.Produtos = database.Produtos.Where(p => p.Status == true).ToList();
+            var promocao = database.Promocoes.Include(p => p.Produto).First(p => p.Id == id);
+
             PromocaoDTO promocaoView = new PromocaoDTO();
             promocaoView.Id = promocao.Id;
             promocaoView.Nome = promocao.Nome;
-            promocaoView.ProdutoID = produto.Id;
+            promocaoView.ProdutoID = promocao.Produto.Id;
             promocaoView.Porcentagem = promocao.Porcentagem;
             return View(promocaoView);
         }
@@ -143,5 +141,36 @@ namespace sonmarket.Controllers
 
         #endregion Promoção
 
+        #region Estoque
+        public IActionResult Estoques()
+        {
+            var estoques = database.Estoques.Include(e => e.Produto).Where(e => e.Status == true).ToList();
+            return View(estoques);
+        }
+
+        public IActionResult NovoEstoque()
+        {
+            ViewBag.Produtos = database.Produtos.Where(p => p.Status == true).ToList();
+            return View();
+        }
+
+        public IActionResult EditarEstoque(int id)
+        {
+            ViewBag.Produtos = database.Produtos.Where(p => p.Status == true).ToList();
+            var estoque = database.Estoques.Include(e => e.Produto).First(e => e.Id == id);
+            EstoqueDTO estoqueView = new EstoqueDTO();
+            estoqueView.Id = estoque.Id;
+            estoqueView.Nome = estoque.Nome;
+            estoqueView.ProdutoID = estoque.Produto.Id;
+            estoqueView.Quantidade = estoque.Quantidade;
+            return View(estoqueView);
+        }
+        public IActionResult AtivarEstoque()
+        {
+            var estoques = database.Estoques.Include(e => e.Produto).Where(e => e.Status == false).ToList();
+            return View(estoques);
+        }
+
+        #endregion Estoque
     }
 }

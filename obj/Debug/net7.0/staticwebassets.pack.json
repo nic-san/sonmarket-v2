@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\sonmarket.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\wwwroot\\css\\frente.css",
+      "PackagePath": "staticwebassets\\css\\frente.css"
+    },
+    {
       "Id": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\wwwroot\\css\\sb-admin.css",
       "PackagePath": "staticwebassets\\css\\sb-admin.css"
     },
@@ -35,6 +39,10 @@
     {
       "Id": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\wwwroot\\js\\demo\\datatables-demo.js",
       "PackagePath": "staticwebassets\\js\\demo\\datatables-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\wwwroot\\js\\frente.js",
+      "PackagePath": "staticwebassets\\js\\frente.js"
     },
     {
       "Id": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\wwwroot\\js\\sb-admin.js",

@@ -24,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEF0aXZhckNhdGVnb3JpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarEstoque.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEF0aXZhckVzdG9xdWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarFornecedor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEF0aXZhckZvcm5lY2Vkb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEVkaXRhckNhdGVnb3JpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarEstoque.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEVkaXRhckVzdG9xdWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarFornecedor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEVkaXRhckZvcm5lY2Vkb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarPromocao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEVkaXRhclByb21vY2FvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Estoques.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEVzdG9xdWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Fornecedores.cshtml]
@@ -70,6 +82,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovaPromocao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXE5vdmFQcm9tb2Nhby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovoEstoque.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXE5vdm9Fc3RvcXVlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovoFornecedor.cshtml]

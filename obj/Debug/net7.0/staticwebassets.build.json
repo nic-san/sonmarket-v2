@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gniKw/6GI9HI/xjVuwI029MOSzPw1ksgseX0kvkQg2Y=",
+  "Hash": "+tQ0hZ6QZRYLTkl2VwYnRp8vmsLp/ER/MRU6W5UJ95g=",
   "Source": "sonmarket",
   "BasePath": "_content/sonmarket",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\sonmarket.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\wwwroot\\css\\frente.css",
+      "SourceId": "sonmarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\wwwroot\\",
+      "BasePath": "_content/sonmarket",
+      "RelativePath": "css/frente.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\frente.css"
+    },
+    {
       "Identity": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\wwwroot\\css\\sb-admin.css",
       "SourceId": "sonmarket",
       "SourceType": "Discovered",
@@ -1205,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\demo\\datatables-demo.js"
+    },
+    {
+      "Identity": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\wwwroot\\js\\frente.js",
+      "SourceId": "sonmarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\wwwroot\\",
+      "BasePath": "_content/sonmarket",
+      "RelativePath": "js/frente.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\frente.js"
     },
     {
       "Identity": "C:\\Users\\NicolasSantos-ÚnicoR\\Documents\\sonmarket\\wwwroot\\js\\sb-admin.js",
