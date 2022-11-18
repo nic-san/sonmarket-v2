@@ -1,6 +1,7 @@
 /* Variáveis */
 
-var enderecoTemp = "http://localhost:5035/Produtos/Produto/"
+var enderecoTemp = "http://localhost:5035/Produtos/Produto/";
+var enderecoGerarVenda = "http://localhost:5035/Vendas/GerarVenda";
 var produto;
 var compra = [];
 var __totalVenda__ = 0.0;
@@ -64,8 +65,8 @@ $("#produtoForm").on("submit", function (event) {
     var produtoParaTabela = produto;
     var qtd = $("#campoQtd").val();
 
-    console.log(produtoParaTabela);
-    console.log(qtd);
+    // console.log(produtoParaTabela);
+    // console.log(qtd);
     adicionarNaTabela(produtoParaTabela, qtd);
     //var produto = undefined;
     zerarFormulario();
@@ -96,9 +97,9 @@ $("#pesquisar").click(function () {
         produto.medicao = med;
 
         preencherFormulario(produto);
-        console.log(produto);
+        // console.log(produto);
     }).fail(function () {
-        alert("Produto inválido");
+        alert("Produto sem estoque");
     });
 });
 
@@ -120,7 +121,27 @@ $("#finalizarVendaBtn").click(function () {
             var troco = valorPago - __totalVenda__;
             $("#troco").val(troco);
 
+            //array
+            compra.forEach(elemento => {
+                elemento.produto = elemento.produto.id;
+            });
 
+            //preparar um novo objeto
+            var _venda = { total: __totalVenda__, troco: troco, produtos: compra };
+
+            //backend
+            $.ajax({
+                type: "POST",
+                url: enderecoGerarVenda,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(_venda),
+                success: function (data) {
+                    console.log("dados enviados com sucesso");
+                    console.log(data);
+                }
+            });
+            zerarFormulario();
         } else {
             alert("Compra inválida. Valor pago menor que o total");
             return;

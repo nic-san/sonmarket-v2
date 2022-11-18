@@ -9,129 +9,133 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = sonmarket
 build_property.RootNamespace = sonmarket
-build_property.ProjectDir = C:\Users\NicolasSantos-ÚnicoR\Documents\sonmarket\
+build_property.ProjectDir = c:\Users\NicolasSantos-ÚnicoR\Documents\sonmarket\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\NicolasSantos-ÚnicoR\Documents\sonmarket
+build_property.MSBuildProjectDirectory = c:\Users\NicolasSantos-ÚnicoR\Documents\sonmarket
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Areas/Identity/Pages/_ViewStart.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarCategoria.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarCategoria.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEF0aXZhckNhdGVnb3JpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarEstoque.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarEstoque.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEF0aXZhckVzdG9xdWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarFornecedor.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarFornecedor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEF0aXZhckZvcm5lY2Vkb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarProduto.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEF0aXZhclByb2R1dG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarPromocao.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/AtivarPromocao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEF0aXZhclByb21vY2FvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Categorias.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Categorias.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXENhdGVnb3JpYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarCategoria.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarCategoria.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEVkaXRhckNhdGVnb3JpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarEstoque.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarEstoque.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEVkaXRhckVzdG9xdWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarFornecedor.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarFornecedor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEVkaXRhckZvcm5lY2Vkb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarProduto.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEVkaXRhclByb2R1dG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarPromocao.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/EditarPromocao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEVkaXRhclByb21vY2FvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Estoques.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Estoques.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEVzdG9xdWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Fornecedores.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Fornecedores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEZvcm5lY2Vkb3Jlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Index.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovaCategoria.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovaCategoria.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXE5vdmFDYXRlZ29yaWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovaPromocao.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovaPromocao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXE5vdmFQcm9tb2Nhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovoEstoque.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovoEstoque.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXE5vdm9Fc3RvcXVlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovoFornecedor.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovoFornecedor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXE5vdm9Gb3JuZWNlZG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovoProduto.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/NovoProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXE5vdm9Qcm9kdXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Produtos.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Produtos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXFByb2R1dG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Promocoes.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Promocoes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXFByb21vY29lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Home/Index.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Gestao/Vendas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXFZlbmRhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Shared/Error.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Shared/_LayoutAdm.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Shared/_LayoutAdm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Shared/_LoginPartial.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/_ViewImports.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/_ViewStart.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Shared/_Layout.cshtml]
+[c:/Users/NicolasSantos-ÚnicoR/Documents/sonmarket/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-govza36gcc

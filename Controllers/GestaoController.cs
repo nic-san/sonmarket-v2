@@ -172,5 +172,21 @@ namespace sonmarket.Controllers
         }
 
         #endregion Estoque
+
+        #region Venda
+        public IActionResult Vendas()
+        {
+            var vendas = database.Vendas.ToList();
+            return View(vendas);
+        }
+
+        [HttpPost]
+        public IActionResult RelatorioDeVendas()
+        {
+            var vendas = database.Vendas.ToList();
+            return Ok(vendas);
+        }
+        #endregion Venda
+
     }
 }

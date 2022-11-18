@@ -97,7 +97,7 @@ namespace sonmarket.Controllers
                 if (produto != null)
                 {
                     var estoque = database.Estoques.First(e => e.Produto.Id == produto.Id);
-                    if (estoque == null)
+                    if (estoque == null || estoque.Quantidade <= 0.0)
                     {
                         produto = null;
                     }
@@ -135,5 +135,7 @@ namespace sonmarket.Controllers
                 return Json(null);
             }
         }
+
+
     }
 }
